@@ -29,5 +29,5 @@ A backend-powered Grocery Management System built with **Python**, **Flask**, an
 
 ---
 
-## 📁 Project Structure
+
 
