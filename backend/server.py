@@ -1,16 +1,17 @@
 import json
-from flask import Flask,request,jsonify
+from flask import Flask,request,jsonify,render_template
 import products_dao
 import uom_dao
 import order_dao
 from sql_connection import get_sql_connection
+
 
 app = Flask(__name__)
 
 connection = get_sql_connection()
 @app.route("/")
 def home():
-    return "<h1> WELCOME TO THE GROCERY STORE MANAGEMENT SYSTEM </h1>"
+    return render_template("index.html")
 
 
 @app.route("/getProducts",methods=['GET'])
